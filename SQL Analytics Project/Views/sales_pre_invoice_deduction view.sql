@@ -1,6 +1,8 @@
 CREATE VIEW `fact_pre_invoice_deductions` AS
 SELECT 
     	   s.date, 
+           s.fiscal_year,
+           s.customer_code,
            s.product_code, 
            p.product, 
 	   p.variant, 
